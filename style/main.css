@@ -1,4 +1,7 @@
-/* :root */
+ :root {
+  --primary-bg-color: #fcf6bd;
+  --secondary-color: #ff99c8;
+}
 
 body {
     margin: 0;
