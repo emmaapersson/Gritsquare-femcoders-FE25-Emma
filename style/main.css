@@ -28,6 +28,10 @@ main {
     flex-grow: 1;
 }
 
+.logo {
+    width: 16rem;
+}
+
 /* Navigation Bar */
 .desktop-nav {
     display: none;
@@ -105,6 +109,11 @@ footer {
 @media (min-width: 1024px) {
     header {
         justify-content: center;
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 25rem;
     }
 
     .desktop-nav {
@@ -127,4 +136,5 @@ footer {
   
 .card {
     background-color: hotpink;
+}
 }
