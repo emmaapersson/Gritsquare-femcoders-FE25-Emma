@@ -95,8 +95,42 @@ footer {
 }
 
 
+
+/* Lägger till lite styling på contact sidan */
+
+.card {
+    display:flex;
+    flex-direction: column;
+    text-align:start;
+    width: 55%;
+    padding:5px;
+    margin:10px;
+    border-radius: 20px;
+    
+}
+
+.card p {
+    margin:0px;
+    text-align: center;
+    font-size: larger;
+}
+
+fieldset  {
+    border:black 2px solid;
+    background-color: hotpink;
+}
+
+
+
+
+
+
 /* Breakpoint tablet */
 @media (min-width: 768px) {
+
+
+
+
     
 }
 
@@ -124,7 +158,12 @@ footer {
     .mobile-nav {
         display: none !important;
     }
-  
+
+
+
+/* designar kortet på contact sidan  */
+
 .card {
-    background-color: hotpink;
+    width: 35%;
+}
 }

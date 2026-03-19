@@ -5,11 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style/main.css">
+    <script src="../modules/buttons.js" type="module"></script>
+
 </head>
 <body> 
+    <p id="timeZone"></p>
     <div class="card">
-        <p>card</p>
+        <form class="card" id="card"> 
+            <fieldset>
+            <legend><p>create an account</p></legend>
+            <lebel for="username"> Name:</lebel>
+            <input type="text" id="username" placeholder="name">
+            <label for="emailInput" >Email:</label>
+            <input type="email" id="emailInput" placeholder="email">
+            <label for="numberInput">Number:</label>
+            <input type="number" id="numberInput" placeholder="073...">
+            <label for="passInput">Password:</label>
+            <input type="password" id="passInput" placeholder="password">
+            <label for="country">Time zone:</label>
+            <select id="country" name="cars">
+              <option value="europe">Europe</option>
+              <option value="asia">Asia</option>
+              <option value="america">America</option>
+             </select>
+             <button id="fbtn">Submit</button>
+            </fieldset>
+        </form>
     </div>
+
     
+
 </body>
 </html>
+
+
