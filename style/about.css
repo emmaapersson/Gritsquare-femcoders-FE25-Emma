@@ -1,11 +1,57 @@
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Vänster kolumn (rubrik + ruta) */
+.left-side {
+    display: flex;
+    flex-direction: column; 
+}
+
+.under-text {
+    margin-top: 10px;
+    max-width: 200px; 
+    text-align: left;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.under-text p {
+    margin: 2px 0; 
+    line-height: 1.2; 
+}
+
+/* Rubriken */
+.rubrik {
+    margin-bottom: 10px; 
+    margin-right: 20px;
+}
+
 .ruta {
     background-color: white;                   
     width: 200px;
-    min-height: 150px;
+    min-height: 200px;
     padding: 30px;
     border: 5px solid orange;      
     border-radius: 15px;
     margin: 15px auto;              
     text-align: center;
     font-weight: bold;
+    margin-right: 30px;
+
+}
+
+.about-container {
+    display: flex;           
+    align-items: flex-start; 
+    gap: 20px;              
+}
+
+
+.about-text {
+    max-width: 600px;      
+    text-align: left;
+    margin-top: 80px;
 }
