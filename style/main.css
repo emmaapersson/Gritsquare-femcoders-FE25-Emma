@@ -84,6 +84,54 @@ a {
     align-self: center;
 }
 
+/* vänster-knapp */
+.left-btn {
+    position: fixed;
+    top: 100px;  
+    left: 20px; 
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* card/formulär */
+#card {
+    position: fixed;
+    top: 150px; /* precis under knappen */
+    left: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 250px;
+}
+
+.hidden {
+    display: none;
+}
+
+#card input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+#card button {
+    width: 100%;
+    padding: 8px;
+    background-color: #1f8ef1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* Footer */
 footer {
     height: 3rem;
