@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/home.css">
     <!-- <link rel="favicon" href="" type="image/"> -->
      <script src="./modules/api.js" type="module"></script>
      <script src="./modules/buttons.js" type="module"></script>
@@ -12,7 +13,7 @@
 <body>
     <header>
         <nav class="desktop-nav">
-            <button class="dark-mode"></button>
+            <button class="dark-mode" aria-label="Button to toggle dark-mode"></button>
             <a href="./contact.html">Contact</a>
             <a href="./index.html"><img class="logo" src="./img/logo.png" alt="Clickable logo saying good vibes that takes users to homepage"></a>
             <a href="./about.html">About</a>
@@ -35,12 +36,15 @@
     <main>
         <h1>Let's spread positivity!</h1>
         <button id="openCard" class="left-btn"></button>
-    <div id="card" class="hidden">
-    <form id="msgForm">
-        <input type="text" id="messageInput" placeholder="Write something positive..." required>
-        <button type="submit">Send</button>
-    </form>
-    </div>
+
+        <div id="card" class="hidden">
+        <form id="msgForm">
+            <input type="text" id="messageInput" maxlength="120" placeholder="Write something positive..." required>
+            <button type="submit">Send</button>
+        </form>
+        </div>
+
+    <section id="messages-display"></section>
 
     <section id="messages"></section>
     </main>
