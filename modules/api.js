@@ -31,10 +31,39 @@ async function displayMsgs() {
 
 //function som lägger till DOM-element
 function render(text) {
-    const body = document.querySelector('main');
-    const h1 = document.createElement('h1');
-    body.appendChild(h1);
-    h1.innerText = text;
+    const container = document.querySelector('#messages');
+
+    const p = document.createElement('p');
+    p.innerText = text;
+
+    container.appendChild(p);
 }
 
 displayMsgs();
+
+//öppnar och stänger card
+const openBtn = document.querySelector('#openCard');
+const card = document.querySelector('#card');
+
+openBtn.addEventListener('click', () => {
+    card.classList.toggle('hidden');  
+});
+
+
+// message card här (Elin)
+const form = document.querySelector('#msgForm');
+const input = document.querySelector('#messageInput');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const text = input.value;
+
+    if (!text) return;
+
+    await addMsg(text);   
+    render(text);       
+
+    form.reset();
+    card.classList.add('hidden');
+});

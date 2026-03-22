@@ -34,6 +34,15 @@
 
     <main>
         <h1>Let's spread positivity!</h1>
+        <button id="openCard" class="left-btn"></button>
+    <div id="card" class="hidden">
+    <form id="msgForm">
+        <input type="text" id="messageInput" placeholder="Write something positive..." required>
+        <button type="submit">Send</button>
+    </form>
+    </div>
+
+    <section id="messages"></section>
     </main>
 
     <footer>
@@ -80,5 +89,6 @@
 
         </section>
     </footer>
+     <script src="./modules/api.js" type="module"></script>
 </body>
 </html>
