@@ -47,7 +47,7 @@ export function selectGif(text, imageUrl) {
     
     const gifResults = document.querySelector('#gifResults');
     if (gifResults) {
-        gifResults.innerHTML = '';
+        gifResults.style.display = 'none';
     }
     const preview = document.querySelector('#selectedGifPreview');
     if (preview) {
@@ -63,8 +63,15 @@ export function getSelectedGif() {
     return selectedGifUrl;
 }
 
+// Clear preview
 export function clearSelectedGif() {
     selectedGifUrl = null;
+    
+    const gifResults = document.querySelector('#gifResults');
+    if (gifResults) {
+        gifResults.style.display = 'grid';
+    }
+    
     const preview = document.querySelector('#selectedGifPreview');
     if (preview) {
         preview.innerHTML = '';
