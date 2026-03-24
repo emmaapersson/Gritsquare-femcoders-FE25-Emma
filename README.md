@@ -13,10 +13,11 @@ Write a message and post it on homepage
 
 Like others messages
 
-Profanityfilter*
+Profanity filter*
 
 Pick a gif with your message
 
+Likes leaderboard*
 
 
 **Added by contributor*
@@ -52,6 +53,8 @@ Pick a gif with your message
 Big thanks to all contributors!
 
 Profanity filter [Mohammed](https://github.com/mohammed-alpha91)
+
+Likes leaderboard [Isak](https://github.com/Isakgit24)
 
 
 ## Sources
