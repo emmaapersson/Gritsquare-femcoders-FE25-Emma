@@ -23,6 +23,8 @@ Button to spawn bubbles that can be popped*
 
 Add emojis to your message*
 
+Bubble sound when new message gets added
+
 
 **Added by contributor*
 ### Message Board
