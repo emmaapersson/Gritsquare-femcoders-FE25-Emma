@@ -75,3 +75,59 @@
     opacity: 0;
   }
 }
+
+
+
+/*Heart animation*/
+
+/*#heart {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+  margin:10px;
+}*/
+
+.heart {
+    position: absolute;
+    width: 12px;
+    height:12px;
+    background:red;
+    pointer-events: none;
+    animation: heartExplode 900ms ease-out forwards;
+    transform-origin: center center;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position:absolute;
+    width:12px;
+    height:12px;
+    background: red;
+    border-radius: 50%;   
+}
+
+
+.heart::before {
+    top: -6px;
+    left:0;
+}
+
+.heart::after {
+    left: -6px;
+    top: 0;
+}
+
+
+@keyframes heartExplode {
+    to {
+    transform: rotate(45deg) translate(var(--x), var(--y)) scale(0) rotate(720deg);
+    opacity: 0;
+    }
+}

@@ -78,13 +78,32 @@ function render(text, id, createdAt, likes, gifUrl) {
     likeBtn.className = 'like-btn';
     likeBtn.innerHTML = `❤️ <span>${likes}</span>`;
 
-    likeBtn.addEventListener('click', () => {
+    likeBtn.style.position = 'relative';
+    likeBtn.style.overflow = 'visible';
+    likeBtn.addEventListener('click', async () => {
         const postRef = ref(db, `messages/${id}/likes`);
-
-        runTransaction(postRef, (currentLikes) => {
+        //--------Heart explosion-------
+        noteCard.style.overflow="unset"  // effecten ska kunna overflowas
+        await   heartExplosion(likeBtn, {
+            num: 40,
+            sizeMin: 8,
+            sizeMax: 18,
+            spread: 300,
+            duration: 500,
+            colors: ["#ff4d6d", "#ff758f", "#ff8fa3"]});
+            //----------
+            await setTimeout(()=>{
+                noteCard.style.overflow="overflow"  // sätt tillbaka overflow:hidden
+                runTransaction(postRef, (currentLikes) => {
             return (currentLikes || 0) + 1;
         })
-    })
+
+
+        },500);
+        
+    }
+)
+
     noteCard.appendChild(likeBtn);
 
     if (gifUrl) {
@@ -175,3 +194,48 @@ form.addEventListener("submit", async (e) => {
   guidelinesCard.classList.add('hidden') //guidelines stängs
   guidelinesManuallyClosed = false; // flagga nollställs
 });
+
+
+
+/** Heart explosion */
+
+
+  function heartExplosion (container, options = {}){
+    
+        if(!container) return;
+        const num = options.num || 35;
+        const sizeMin = options.sizeMin || 10;
+        const sizeMax = options.sizeMax || 20;
+        const spread = options.spread ||300;
+        const colors = options.colors || ["#ff4d6d", "#ff758f", "#ff8fa3"];
+        const duration = options.duration || 900;
+
+        for(let i=0; i<num; i++){
+            const heart = document.createElement('span');
+            heart.classList.add('heart');
+
+            const rect = container.getBoundingClientRect();
+            heart.style.left = rect.width / 2 + 'px';
+            heart.style.top = rect.height / 2 + 'px';
+
+            const size = sizeMin + Math.random() * (sizeMax - sizeMin);
+            heart.style.width = size + 'px';
+            heart.style.height = size + 'px';
+
+            const x = (Math.random() - 0.5) * spread + 'px';
+            const y = (Math.random() - 0.5) * spread + 'px';
+            heart.style.setProperty('--x',x);
+            heart.style.setProperty('--y', y);
+
+            heart.style.background = colors[Math.floor(Math.random() * colors.length)];
+
+            container.appendChild(heart);
+
+            setTimeout(() =>{
+                heart.remove();
+            },duration);
+
+        }
+
+       
+    }
