@@ -33,10 +33,13 @@ darkMode.addEventListener('click', ()=>{
   
 });
 
-console.log(darkMode);
+
 
 const darkModeMobile = document.querySelector('#darkModeMobile');
 darkModeMobile.addEventListener('click', ()=>{
   document.body.classList.toggle('dark');
   
 });
+
+
+
