@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chicle&display=swap");
 
 :root {
   --primary-bg: #fcf6bd;
@@ -9,336 +9,329 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffa8;
-    color: black;
-    min-height: 100vh;
-    font-family: chicle;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffa8;
+  color: black;
+  min-height: 100vh;
+  font-family: chicle;
+  text-align: center;
 }
 
 body.dark {
-    background-color:#363627ed; 
+  background-color: #363627ed;
 }
 
 body.dark h1 {
-    color:white;
+  color: white;
 }
 
-
-
 header {
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    height: 3rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
 .logo {
-    width: 16rem;
+  width: 16rem;
 }
 
 /* Navigation Bar */
 .desktop-nav {
-    display: none;
+  display: none;
 }
 
 a {
-    text-decoration: none;
-    color: var(--peach);
+  text-decoration: none;
+  color: var(--peach);
 }
 
 /* Dropdown menu */
 .mobile-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .dropdown-btn {
-    background: none;
-    border: none;
-    display: flex;
-    align-items: center;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    min-width: 6rem;
-    gap: 0.5rem;
-    padding: 0.5rem;
-    background-color: var(--white);
-    z-index: 1000;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: 6rem;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--white);
+  z-index: 1000;
 }
 
 .dropdown-content.active {
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Main title */
 .page-title {
-    margin: 0;
-    display: flex;
-    align-self: center;
+  margin: 0;
+  display: flex;
+  align-self: center;
 }
 
 /* vänster-knapp */
 .left-btn {
-    position: fixed;
-    top: 100px;  
-    left: 20px; 
-    padding: 15px 15px;
-    border-radius: 50px;
-    background-color: #ec709a;
-    border: 3px solid #ffbd59;
-    cursor: pointer;
-    font-weight: bold;
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  padding: 15px 15px;
+  border-radius: 50px;
+  background-color: #ec709a;
+  border: 3px solid #ffbd59;
+  cursor: pointer;
+  font-weight: bold;
 }
-
 
 /* höger knapp */
 .spawn-btn {
-    position: fixed;
-    top: 100px;
-    right: 20px;   /* ← skillnaden */
-    padding: 15px 15px;
-    border-radius: 50px;
-    background-color: #ec709a;
-    border: 3px solid #ffbd59;
-    cursor: pointer;
-    font-weight: bold;
+  position: fixed;
+  top: 100px;
+  right: 20px; /* ← skillnaden */
+  padding: 15px 15px;
+  border-radius: 50px;
+  background-color: #ec709a;
+  border: 3px solid #ffbd59;
+  cursor: pointer;
+  font-weight: bold;
 }
-
 
 /* Guidelines-card*/
 #guidelines {
-    position: fixed;
-    top: 150px; 
-    left: 320px; 
-    background-color: white;
-    border-radius: 30px;
-    border: 6px solid #ffbd59;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    padding: 15px;
-    z-index: 1000;
+  position: fixed;
+  top: 150px;
+  left: 320px;
+  background-color: white;
+  border-radius: 30px;
+  border: 6px solid #ffbd59;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  z-index: 1000;
 }
 
 #guidelines h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 #guidelines button#closeBtn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #ec709a;
-    border: 4px solid #ffbd59;
-    color: white;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ec709a;
+  border: 4px solid #ffbd59;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 /* card/formulär */
 #card {
-    position: fixed;
-    top: 150px; 
-    bottom: 200px;
-    left: 20px;
-    background-color: white;
-    padding: 15px;
-    border-radius: 30px;
-    border: solid 6px #ffbd59;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    width: 250px;
-    height: 440px;
-    z-index: 1000;
+  position: fixed;
+  top: 150px;
+  bottom: 200px;
+  left: 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 30px;
+  border: solid 6px #ffbd59;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  height: 440px;
+  z-index: 1000;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 #card input {
-    width: 80%;
-    padding: 8px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    border-radius: 20px;
-    border: 4px solid #ffbd59;
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-radius: 20px;
+  border: 4px solid #ffbd59;
 }
 
 #card button {
-    width: 30%;
-    padding: 8px;
-    background-color: #ec709a;
-    color: white;
-    border: 4px solid #ffbd59;
-    border-radius: 20px;
-    cursor: pointer;
-    z-index: 1000;
+  width: 30%;
+  padding: 8px;
+  background-color: #ec709a;
+  color: white;
+  border: 4px solid #ffbd59;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/*Jack: emojis stylad här*/
+#emojis {
+  border: 4px solid #ffbd59;
+  border-radius: 20px;
+  padding: 8px;
 }
 
 /* Gif styling */
 #gifSearchSection {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 #gifSearchInput {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 64px; /*Jack: ändrade även här så att det blev jämnt med input*/
 }
 
 #searchGifBtn {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 #searchGifBtn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 #gifResults {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 10px;
-    margin: 10px 0;
-    overflow-y: auto;
-    width: 100%;
-    height: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 10px 0;
+  overflow-y: auto;
+  width: 100%;
+  height: 100px;
 }
 
 .gif-result {
-    border: 2px solid transparent;
-    border-radius: 8px;
-    transition: all 0.3s;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s;
 }
 
 .gif-result:hover {
-    border-color: #007bff;
-    transform: scale(1.05);
+  border-color: #007bff;
+  transform: scale(1.05);
 }
 
 .gif-result img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 #selectedGifPreview {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin: 10px 0;
-    width: 100%;
-    height: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 10px 0;
+  width: 100%;
+  height: 100px;
 }
 
 #selectedGifPreview img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid #007bff;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #007bff;
 }
 
 /* Footer */
 footer {
-    padding: 0.5rem;
-    background-color: var(--peach);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  padding: 0.5rem;
+  background-color: var(--peach);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 #foot-sec2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* bara la style för att se var darkmode knappen ska vara */
 .dark-mode {
-    background-color: rgb(255, 162, 162);
-    width: 1rem;
-    height: 1rem;
-    border-radius: 2rem;
+  background-color: rgb(255, 162, 162);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 2rem;
 }
-
-
-
-
-
 
 /* Breakpoint tablet */
 @media (min-width: 768px) {
-
-
-
-
-    
 }
-
 
 /* Breakpoint desktop */
 @media (min-width: 1024px) {
-    header {
-        justify-content: center;
-        padding: 1rem;
-    }
+  header {
+    justify-content: center;
+    padding: 1rem;
+  }
 
-    .logo {
-        width: 25rem;
-    }
+  .logo {
+    width: 25rem;
+  }
 
-    .desktop-nav {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-    }
+  .desktop-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
 
-    .desktop-nav a:hover {
-        font-size: 1.2rem;
-        color: var(--secondary);
-    }
+  .desktop-nav a:hover {
+    font-size: 1.2rem;
+    color: var(--secondary);
+  }
 
-    .mobile-nav {
-        display: none !important;
-    }
+  .mobile-nav {
+    display: none !important;
+  }
 
-    #card {
-        height: 700px;
-        width: 500px;
-    }
+  #card {
+    height: 700px;
+    width: 500px;
+  }
 
-    #gifResults {
-        height: 400px;
-        grid-template-columns: repeat(2, 1fr); 
-    }
+  #gifResults {
+    height: 400px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
