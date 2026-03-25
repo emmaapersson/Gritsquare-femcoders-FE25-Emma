@@ -1,5 +1,5 @@
 import { db, msgRef } from "./firebaseconfig.js";
-import { push, ref, query, orderByChild, onValue, serverTimestamp, runTransaction } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-database.js";
+import { push, ref, query, orderByChild, onValue, serverTimestamp, runTransaction, remove } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-database.js";
 import { censorBadWords } from "./censor.js";
 import { searchGifs, displayGifResults, getSelectedGif, clearSelectedGif } from "./gifapi.js";
 
@@ -74,12 +74,33 @@ function render(text, id, createdAt, likes, gifUrl) {
 
        // ljud,notification för när meddelanden dyker upp
         notifSound.currentTime = 0; 
-        notifSound.play().catch(() => {}); 
+        notifSound.play().catch(() => {});
 
          void noteCard.offsetWidth;
         renderedNotes.add(id);
   
     }
+
+    // Delete button
+    const deleteBtn = document.createElement('button');
+    deleteBtn.className = 'delete-btn';
+    deleteBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#BB271A"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>';
+    deleteBtn.title = 'Delete message';
+
+    deleteBtn.addEventListener('click', async () => {
+        const confirmDelete = confirm("Are you sure you want to remove the good vibes? This cannot be undone.");
+        
+        if (confirmDelete) {
+            try {
+                const postRef = ref(db, `messages/${id}`);
+                await remove(postRef);
+            } catch (error) {
+                console.error("Error deleting message:", error);
+                alert("Could not delete message. Try again later.");
+            }
+        }
+    });
+    noteCard.appendChild(deleteBtn);
 
     const likeBtn = document.createElement('button');
     likeBtn.className = 'like-btn';

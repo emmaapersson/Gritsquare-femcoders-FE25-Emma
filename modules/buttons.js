@@ -42,4 +42,5 @@ darkModeMobile.addEventListener('click', ()=>{
 });
 
 
+// Button delete all messages
 
