@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./style/home.css" />
+    <link rel="stylesheet" href="./style/bubble.css" />
     <!-- <link rel="favicon" href="" type="image/"> -->
     <script src="./modules/api.js" type="module"></script>
     <script src="./modules/buttons.js" type="module"></script>
+    <script src="./modules/bubble.js" type="module"></script>
     <title>Good Vibes</title>
   </head>
   <body>
@@ -26,6 +28,7 @@
         /></a>
         <a href="./about.html">About</a>
           <a href="./leaderBoard.html">leaderBoard</a>
+          
       </nav>
 
       <nav class="mobile-nav">
@@ -62,6 +65,9 @@
           <a href="./about.html">About</a>
           <a href="./contact.html">Contact</a>
             <a href="./leaderBoard.html">leaderBoard</a>
+
+            
+            
         </div>
       </nav>
     </header>
@@ -69,6 +75,7 @@
     <main>
       <h1>Let's spread positivity!</h1>
       <button id="openCard" class="left-btn">Press here</button>
+      <button id="spawnBtn" class="spawn-btn">Spawn Bubbles</button>
 
       <div id="card" class="hidden">
         <form id="msgForm">
