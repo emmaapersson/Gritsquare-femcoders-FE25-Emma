@@ -8,7 +8,7 @@ Jag är med i klassdiscorden.
 1. Göra så att man kan skapa ett konto och logga in
 2. ~~Leaderboard vem som har fått mest likes~~
 3. Lägga till så att man kan skriva sitt nickname och det visas med ens meddelande
-4. Text limitation
+4. ~~Text limitation~~
 5. ~~Lägga till så det spawnar bubbles som man kan klicka på för att spricka~~
 6. Man kan lägga till message effekter (animation/glow)
 7. Man får en alertbox när något går fel under publiceringen/submit av meddelandet.
