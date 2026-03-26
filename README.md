@@ -25,9 +25,9 @@ Add emojis to your message*
 
 Bubble sound when new message gets added
 
-Translate the page feature
+Translate the page feature*
 
-Delay on sending messages, Anti-Spam
+Delay on sending messages, Anti-Spam*
 
 Remove messages
 
