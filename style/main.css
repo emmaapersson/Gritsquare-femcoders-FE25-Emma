@@ -9,17 +9,7 @@
   --postitDefault: #d6c5ef;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--primary-bg);
-  color: black;
-  min-height: 100vh;
-  font-family: chicle;
-  text-align: center;
-}
+/* DARK MODE STYLING */
 
 body.dark {
   background-color: #363627ed;
@@ -29,6 +19,55 @@ body.dark h1 {
   color: white;
 }
 
+body.dark p {
+    color:white;
+}
+
+/* bara la style för att se var darkmode knappen ska vara */
+/* .dark-mode {
+  background-color: rgb(255, 162, 162);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 2rem;
+} */
+/* BASE STYLING */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-bg);
+  min-height: 100vh;
+  font-family: chicle;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: var(--peach);
+}
+
+button {
+    background-color: var(--secondary);
+    font-family: chicle;
+    border: var(--peach) solid 5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* GLOBAL CARD STYLE */
+.card {
+  background-color: var(--white);
+  border: 6px solid var(--peach);
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* NAVIGATION BAR */
 header {
   padding: 0.5rem;
   display: flex;
@@ -36,22 +75,12 @@ header {
   height: 3rem;
 }
 
-main {
-  flex: 1;
-}
-
 .logo {
   width: 16rem;
 }
 
-/* Navigation Bar */
 .desktop-nav {
   display: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--peach);
 }
 
 /* Dropdown menu */
@@ -94,4 +123,53 @@ a {
   margin: 0;
   display: flex;
   align-self: center;
+}
+
+/* Footer */
+footer {
+  padding: 0.5rem;
+  background-color: var(--peach);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#foot-sec2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* =================
+Desktop styling 
+================== */
+
+@media (min-width: 1024px) {
+  header {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 25rem;
+  }
+
+  .desktop-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .desktop-nav a:hover {
+    font-size: 1.2rem;
+    color: var(--secondary);
+  }
+
+  .mobile-nav {
+    display: none !important;
+  }
+
 }

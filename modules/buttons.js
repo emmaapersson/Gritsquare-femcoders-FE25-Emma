@@ -1,44 +1,31 @@
 // Dropdown menu btn
-const menuBtn = document.querySelector('.dropdown-btn')
-const menu = document.querySelector('.dropdown-content')
+const menus = document.querySelectorAll('.mobile-nav');
 
-menuBtn.addEventListener('click', (event) => {
-    event.stopPropagation(); 
-    menu.classList.toggle('active');
+menus.forEach(nav => {
+    const btn = nav.querySelector('.dropdown-btn');
+    const menu = nav.querySelector('.dropdown-content');
+
+    if (!btn || !menu) return;
+
+    btn.addEventListener('click', (e) =>{
+        e.stopPropagation();
+        menu.classList.toggle('active');
+    });
+
+    window.addEventListener('click', (e) => {
+        if (!menu.contains(e.target) && !btn.contains(e.target)) {
+            menu.classList.remove('active');
+        }
+    });
 });
 
-window.addEventListener('click', (event) => {
-    if (menu.classList.contains('active') && !menu.contains(event.target)) {
-        menu.classList.remove('active');
-    }
-});
+// Button for dark-mode
+const darkButtons = document.querySelectorAll('.dark-mode');
 
-
-
-menuBtn.addEventListener('click', (event) => {
-    event.stopPropagation(); 
-    menu.classList.toggle('active');
-});
-
-window.addEventListener('click', (event) => {
-    if (menu.classList.contains('active') && !menu.contains(event.target)) {
-        menu.classList.remove('active');
-    }
-});
-
-
-const darkMode = document.querySelector('#darkBtn');
-darkMode.addEventListener('click', ()=>{
-   document.body.classList.toggle('dark');
-  
-});
-
-
-
-const darkModeMobile = document.querySelector('#darkModeMobile');
-darkModeMobile.addEventListener('click', ()=>{
-  document.body.classList.toggle('dark');
-  
+darkButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+  });
 });
 
 

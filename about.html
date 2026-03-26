@@ -1,111 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/main.css">
-     <link rel="stylesheet" href="./style/about.css">
-     <script src="../modules/buttons.js" type="module"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/about.css" />
+    <script src="../modules/buttons.js" type="module"></script>
     <title>About</title>
-</head>
-<body>
-     <header>
-        <nav class="desktop-nav">
-            <button class="dark-mode" id="darkBtn" type="button" title="Toggle dark mode"></button>
-            <a href="./contact.html">Contact</a>
-            <a href="./index.html"><img class="logo" src="../img/logo.png" alt="Clickable logo saying good vibes that takes users to homepage"></a>
-            <a href="./about.html">About</a>
-              <a href="./leaderBoard.html">leaderBoard</a>
-        </nav>
-        
-        <nav class="mobile-nav">
-            <a href="./index.html"><img class="logo" src="../img/logo.png" alt="Clickable logo saying good vibes that takes users to homepage"></a>
-            <button class="dark-mode"  id="darkModeMobile" type="button" title="Toggle dark mode"></button>
-            <button class="dropdown-btn" type="button" title="Toggle navigation menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 -960 960 960" width="2rem" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-            </button>
+  </head>
+  <body>
+    <header>
+      <nav class="desktop-nav">
+        <button
+          class="dark-mode"
+          id="darkBtn"
+          type="button"
+          title="Toggle dark mode"
+        ></button>
+        <a href="./contact.html">Contact</a>
+        <a href="./index.html"
+          ><img
+            class="logo"
+            src="../img/logo.png"
+            alt="Clickable logo saying good vibes that takes users to homepage"
+        /></a>
+        <a href="./about.html">About</a>
+        <a href="./leaderBoard.html">leaderBoard</a>
+      </nav>
 
-             <div class="dropdown-content">
-                <a href="./about.html">About</a>
-                <a href="./contact.html">Contact</a>
-                  <a href="./leaderBoard.html">leaderBoard</a>
-            </div>
-        </nav>
+      <nav class="mobile-nav">
+        <a href="./index.html"
+          ><img
+            class="logo"
+            src="../img/logo.png"
+            alt="Clickable logo saying good vibes that takes users to homepage"
+        /></a>
+        <button
+          class="dark-mode"
+          id="darkModeMobile"
+          type="button"
+          title="Toggle dark mode"
+        ></button>
+        <button
+          class="dropdown-btn"
+          type="button"
+          title="Toggle navigation menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="2rem"
+            viewBox="0 -960 960 960"
+            width="2rem"
+            fill="#1f1f1f"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </button>
+
+        <div class="dropdown-content">
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./leaderBoard.html">leaderBoard</a>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- bildrutan -->
-  <div class="about-container"> 
-    <div class="about-box">
-        <h2 class="rubrik">About Us</h2>
+      <!-- bildrutan -->
+      <div class="about-container">
+        <div class="about-box">
+          <h2 class="rubrik">About Us</h2>
 
           <!-- text brevid (till höger om) rutan -->
-      <div class="about-text">
-      <h2> We are FemCoders! 
-        A team of 5 women coding hard so we can spread positivity together! </h2>
-      <p> We want to not only make it easy to spread positivity but also receive them! Join us on our journey and spread positivity!</p>
-      <h3>In a world that is cruel, choose to be nice!</h3>
-      </div>
+          <div class="about-text">
+            <h2>
+              We are FemCoders! A team of 5 women coding hard so we can spread
+              positivity together!
+            </h2>
+            <p>
+              We want to not only make it easy to spread positivity but also
+              receive them! Join us on our journey and spread positivity!
+            </p>
+            <h3>In a world that is cruel, choose to be nice!</h3>
+          </div>
 
-         <!-- Text under rutan -->
-        <div class="under-text">
-         <h2> Come and meet our team!</h2>
-         <p>Erica Isgren</p>
-         <p>Emma Persson</p>
-         <p>Bianca Addae</p>
-         <p>Elin Kristiansson</p>
-         <p>Jenny Hangso</p>
+          <!-- Text under rutan -->
+          <div class="under-text">
+            <h2>Come and meet our team!</h2>
+            <p>Erica Isgren</p>
+            <p>Emma Persson</p>
+            <p>Bianca Addae</p>
+            <p>Elin Kristiansson</p>
+            <p>Jenny Hangso</p>
+          </div>
         </div>
-    </div>
-  </div>
+      </div>
     </main>
-       <footer>
-    <section>
-      <p>Social Media</p>
-      <article id="foot-sec1">
-        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Facebook--Streamline-Simple-Icons"
-          height="24" width="24">
-          <desc>Facebook Streamline Icon: https://streamlinehq.com</desc>
-          <title>Facebook</title>
-          <path
-            d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0 -4.085 1.848 -5.978 5.858 -5.978 0.401 0 0.955 0.042 1.468 0.103a8.68 8.68 0 0 1 1.141 0.195v3.325a8.623 8.623 0 0 0 -0.653 -0.036 26.805 26.805 0 0 0 -0.733 -0.009c-0.707 0 -1.259 0.096 -1.675 0.309a1.686 1.686 0 0 0 -0.679 0.622c-0.258 0.42 -0.374 0.995 -0.374 1.752v1.297h3.919l-0.386 2.103 -0.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0 -6.627 -5.373 -12 -12 -12s-12 5.373 -12 12c0 5.628 3.874 10.35 9.101 11.647Z"
-            fill="#000000" stroke-width="1"></path>
-        </svg>
+    <footer>
+      <section>
+        <p>Social Media</p>
+        <article id="foot-sec1">
+          <svg
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            id="Facebook--Streamline-Simple-Icons"
+            height="24"
+            width="24"
+          >
+            <desc>Facebook Streamline Icon: https://streamlinehq.com</desc>
+            <title>Facebook</title>
+            <path
+              d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0 -4.085 1.848 -5.978 5.858 -5.978 0.401 0 0.955 0.042 1.468 0.103a8.68 8.68 0 0 1 1.141 0.195v3.325a8.623 8.623 0 0 0 -0.653 -0.036 26.805 26.805 0 0 0 -0.733 -0.009c-0.707 0 -1.259 0.096 -1.675 0.309a1.686 1.686 0 0 0 -0.679 0.622c-0.258 0.42 -0.374 0.995 -0.374 1.752v1.297h3.919l-0.386 2.103 -0.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0 -6.627 -5.373 -12 -12 -12s-12 5.373 -12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+              fill="#000000"
+              stroke-width="1"
+            ></path>
+          </svg>
 
-        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Instagram--Streamline-Simple-Icons"
-          height="24" width="24">
-          <desc>Instagram Streamline Icon: https://streamlinehq.com</desc>
-          <title>Instagram</title>
-          <path
-            d="M7.0301 0.084c-1.2768 0.0602 -2.1487 0.264 -2.911 0.5634 -0.7888 0.3075 -1.4575 0.72 -2.1228 1.3877 -0.6652 0.6677 -1.075 1.3368 -1.3802 2.127 -0.2954 0.7638 -0.4956 1.6365 -0.552 2.914 -0.0564 1.2775 -0.0689 1.6882 -0.0626 4.947 0.0062 3.2586 0.0206 3.6671 0.0825 4.9473 0.061 1.2765 0.264 2.1482 0.5635 2.9107 0.308 0.7889 0.72 1.4573 1.388 2.1228 0.6679 0.6655 1.3365 1.0743 2.1285 1.38 0.7632 0.295 1.6361 0.4961 2.9134 0.552 1.2773 0.056 1.6884 0.069 4.9462 0.0627 3.2578 -0.0062 3.668 -0.0207 4.9478 -0.0814 1.28 -0.0607 2.147 -0.2652 2.9098 -0.5633 0.7889 -0.3086 1.4578 -0.72 2.1228 -1.3881 0.665 -0.6682 1.0745 -1.3378 1.3795 -2.1284 0.2957 -0.7632 0.4966 -1.636 0.552 -2.9124 0.056 -1.2809 0.0692 -1.6898 0.063 -4.948 -0.0063 -3.2583 -0.021 -3.6668 -0.0817 -4.9465 -0.0607 -1.2797 -0.264 -2.1487 -0.5633 -2.9117 -0.3084 -0.7889 -0.72 -1.4568 -1.3876 -2.1228C21.2982 1.33 20.628 0.9208 19.8378 0.6165 19.074 0.321 18.2017 0.1197 16.9244 0.0645 15.6471 0.0093 15.236 -0.005 11.977 0.0014 8.718 0.0076 8.31 0.0215 7.0301 0.0839m0.1402 21.6932c-1.17 -0.0509 -1.8053 -0.2453 -2.2287 -0.408 -0.5606 -0.216 -0.96 -0.4771 -1.3819 -0.895 -0.422 -0.4178 -0.6811 -0.8186 -0.9 -1.378 -0.1644 -0.4234 -0.3624 -1.058 -0.4171 -2.228 -0.0595 -1.2645 -0.072 -1.6442 -0.079 -4.848 -0.007 -3.2037 0.0053 -3.583 0.0607 -4.848 0.05 -1.169 0.2456 -1.805 0.408 -2.2282 0.216 -0.5613 0.4762 -0.96 0.895 -1.3816 0.4188 -0.4217 0.8184 -0.6814 1.3783 -0.9003 0.423 -0.1651 1.0575 -0.3614 2.227 -0.4171 1.2655 -0.06 1.6447 -0.072 4.848 -0.079 3.2033 -0.007 3.5835 0.005 4.8495 0.0608 1.169 0.0508 1.8053 0.2445 2.228 0.408 0.5608 0.216 0.96 0.4754 1.3816 0.895 0.4217 0.4194 0.6816 0.8176 0.9005 1.3787 0.1653 0.4217 0.3617 1.056 0.4169 2.2263 0.0602 1.2655 0.0739 1.645 0.0796 4.848 0.0058 3.203 -0.0055 3.5834 -0.061 4.848 -0.051 1.17 -0.245 1.8055 -0.408 2.2294 -0.216 0.5604 -0.4763 0.96 -0.8954 1.3814 -0.419 0.4215 -0.8181 0.6811 -1.3783 0.9 -0.4224 0.1649 -1.0577 0.3617 -2.2262 0.4174 -1.2656 0.0595 -1.6448 0.072 -4.8493 0.079 -3.2045 0.007 -3.5825 -0.006 -4.848 -0.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0 -1.437 1.4424M5.8385 12.012c0.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026 -0.0065 6.157 -2.7701 6.1506 -6.1733 -0.0065 -3.4032 -2.771 -6.1565 -6.174 -6.1498 -3.403 0.0067 -6.156 2.771 -6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
-            fill="#000000" stroke-width="1"></path>
-        </svg>
+          <svg
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            id="Instagram--Streamline-Simple-Icons"
+            height="24"
+            width="24"
+          >
+            <desc>Instagram Streamline Icon: https://streamlinehq.com</desc>
+            <title>Instagram</title>
+            <path
+              d="M7.0301 0.084c-1.2768 0.0602 -2.1487 0.264 -2.911 0.5634 -0.7888 0.3075 -1.4575 0.72 -2.1228 1.3877 -0.6652 0.6677 -1.075 1.3368 -1.3802 2.127 -0.2954 0.7638 -0.4956 1.6365 -0.552 2.914 -0.0564 1.2775 -0.0689 1.6882 -0.0626 4.947 0.0062 3.2586 0.0206 3.6671 0.0825 4.9473 0.061 1.2765 0.264 2.1482 0.5635 2.9107 0.308 0.7889 0.72 1.4573 1.388 2.1228 0.6679 0.6655 1.3365 1.0743 2.1285 1.38 0.7632 0.295 1.6361 0.4961 2.9134 0.552 1.2773 0.056 1.6884 0.069 4.9462 0.0627 3.2578 -0.0062 3.668 -0.0207 4.9478 -0.0814 1.28 -0.0607 2.147 -0.2652 2.9098 -0.5633 0.7889 -0.3086 1.4578 -0.72 2.1228 -1.3881 0.665 -0.6682 1.0745 -1.3378 1.3795 -2.1284 0.2957 -0.7632 0.4966 -1.636 0.552 -2.9124 0.056 -1.2809 0.0692 -1.6898 0.063 -4.948 -0.0063 -3.2583 -0.021 -3.6668 -0.0817 -4.9465 -0.0607 -1.2797 -0.264 -2.1487 -0.5633 -2.9117 -0.3084 -0.7889 -0.72 -1.4568 -1.3876 -2.1228C21.2982 1.33 20.628 0.9208 19.8378 0.6165 19.074 0.321 18.2017 0.1197 16.9244 0.0645 15.6471 0.0093 15.236 -0.005 11.977 0.0014 8.718 0.0076 8.31 0.0215 7.0301 0.0839m0.1402 21.6932c-1.17 -0.0509 -1.8053 -0.2453 -2.2287 -0.408 -0.5606 -0.216 -0.96 -0.4771 -1.3819 -0.895 -0.422 -0.4178 -0.6811 -0.8186 -0.9 -1.378 -0.1644 -0.4234 -0.3624 -1.058 -0.4171 -2.228 -0.0595 -1.2645 -0.072 -1.6442 -0.079 -4.848 -0.007 -3.2037 0.0053 -3.583 0.0607 -4.848 0.05 -1.169 0.2456 -1.805 0.408 -2.2282 0.216 -0.5613 0.4762 -0.96 0.895 -1.3816 0.4188 -0.4217 0.8184 -0.6814 1.3783 -0.9003 0.423 -0.1651 1.0575 -0.3614 2.227 -0.4171 1.2655 -0.06 1.6447 -0.072 4.848 -0.079 3.2033 -0.007 3.5835 0.005 4.8495 0.0608 1.169 0.0508 1.8053 0.2445 2.228 0.408 0.5608 0.216 0.96 0.4754 1.3816 0.895 0.4217 0.4194 0.6816 0.8176 0.9005 1.3787 0.1653 0.4217 0.3617 1.056 0.4169 2.2263 0.0602 1.2655 0.0739 1.645 0.0796 4.848 0.0058 3.203 -0.0055 3.5834 -0.061 4.848 -0.051 1.17 -0.245 1.8055 -0.408 2.2294 -0.216 0.5604 -0.4763 0.96 -0.8954 1.3814 -0.419 0.4215 -0.8181 0.6811 -1.3783 0.9 -0.4224 0.1649 -1.0577 0.3617 -2.2262 0.4174 -1.2656 0.0595 -1.6448 0.072 -4.8493 0.079 -3.2045 0.007 -3.5825 -0.006 -4.848 -0.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0 -1.437 1.4424M5.8385 12.012c0.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026 -0.0065 6.157 -2.7701 6.1506 -6.1733 -0.0065 -3.4032 -2.771 -6.1565 -6.174 -6.1498 -3.403 0.0067 -6.156 2.771 -6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+              fill="#000000"
+              stroke-width="1"
+            ></path>
+          </svg>
 
-        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Github--Streamline-Simple-Icons"
-          height="24" width="24">
-          <desc>Github Streamline Icon: https://streamlinehq.com</desc>
-          <title>GitHub</title>
-          <path
-            d="M12 0.297c-6.63 0 -12 5.373 -12 12 0 5.303 3.438 9.8 8.205 11.385 0.6 0.113 0.82 -0.258 0.82 -0.577 0 -0.285 -0.01 -1.04 -0.015 -2.04 -3.338 0.724 -4.042 -1.61 -4.042 -1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087 -0.744 0.084 -0.729 0.084 -0.729 1.205 0.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495 0.998 0.108 -0.776 0.417 -1.305 0.76 -1.605 -2.665 -0.3 -5.466 -1.332 -5.466 -5.93 0 -1.31 0.465 -2.38 1.235 -3.22 -0.135 -0.303 -0.54 -1.523 0.105 -3.176 0 0 1.005 -0.322 3.3 1.23 0.96 -0.267 1.98 -0.399 3 -0.405 1.02 0.006 2.04 0.138 3 0.405 2.28 -1.552 3.285 -1.23 3.285 -1.23 0.645 1.653 0.24 2.873 0.12 3.176 0.765 0.84 1.23 1.91 1.23 3.22 0 4.61 -2.805 5.625 -5.475 5.92 0.42 0.36 0.81 1.096 0.81 2.22 0 1.606 -0.015 2.896 -0.015 3.286 0 0.315 0.21 0.69 0.825 0.57C20.565 22.092 24 17.592 24 12.297c0 -6.627 -5.373 -12 -12 -12"
-            fill="#000000" stroke-width="1"></path>
-        </svg>
-      </article>
-    </section>
+          <svg
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            id="Github--Streamline-Simple-Icons"
+            height="24"
+            width="24"
+          >
+            <desc>Github Streamline Icon: https://streamlinehq.com</desc>
+            <title>GitHub</title>
+            <path
+              d="M12 0.297c-6.63 0 -12 5.373 -12 12 0 5.303 3.438 9.8 8.205 11.385 0.6 0.113 0.82 -0.258 0.82 -0.577 0 -0.285 -0.01 -1.04 -0.015 -2.04 -3.338 0.724 -4.042 -1.61 -4.042 -1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087 -0.744 0.084 -0.729 0.084 -0.729 1.205 0.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495 0.998 0.108 -0.776 0.417 -1.305 0.76 -1.605 -2.665 -0.3 -5.466 -1.332 -5.466 -5.93 0 -1.31 0.465 -2.38 1.235 -3.22 -0.135 -0.303 -0.54 -1.523 0.105 -3.176 0 0 1.005 -0.322 3.3 1.23 0.96 -0.267 1.98 -0.399 3 -0.405 1.02 0.006 2.04 0.138 3 0.405 2.28 -1.552 3.285 -1.23 3.285 -1.23 0.645 1.653 0.24 2.873 0.12 3.176 0.765 0.84 1.23 1.91 1.23 3.22 0 4.61 -2.805 5.625 -5.475 5.92 0.42 0.36 0.81 1.096 0.81 2.22 0 1.606 -0.015 2.896 -0.015 3.286 0 0.315 0.21 0.69 0.825 0.57C20.565 22.092 24 17.592 24 12.297c0 -6.627 -5.373 -12 -12 -12"
+              fill="#000000"
+              stroke-width="1"
+            ></path>
+          </svg>
+        </article>
+      </section>
 
-    <section id="foot-sec2">
-      <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Coursera--Streamline-Simple-Icons"
-        height="24" width="24">
-        <desc>Coursera Streamline Icon: https://streamlinehq.com</desc>
-        <title>Coursera</title>
-        <path
-          d="M11.374 23.977c-4.183 -0.21 -8.006 -2.626 -9.959 -6.347 -2.097 -3.858 -1.871 -8.864 0.732 -12.454C4.748 1.338 9.497 -0.698 14.281 0.23c4.583 0.857 8.351 4.494 9.358 8.911 1.122 4.344 -0.423 9.173 -3.925 12.04 -2.289 1.953 -5.295 2.956 -8.34 2.797zm7.705 -8.05a588.737 588.737 0 0 0 -3.171 -1.887c-0.903 1.483 -2.885 2.248 -4.57 1.665 -2.024 -0.639 -3.394 -2.987 -2.488 -5.134 0.801 -2.009 2.79 -2.707 4.357 -2.464a4.19 4.19 0 0 1 2.623 1.669c1.077 -0.631 2.128 -1.218 3.173 -1.855 -2.03 -3.118 -6.151 -4.294 -9.656 -2.754 -3.13 1.423 -4.89 4.68 -4.388 7.919 0.54 3.598 3.73 6.486 7.716 6.404a7.664 7.664 0 0 0 6.404 -3.563z"
-          fill="#000000" stroke-width="1"></path>
-      </svg>
-      <p>FemCoders</p>
-    </section>
-    <section id="foot-sec3"></section>
-  </footer>
-   
-    
-</body>
+      <section id="foot-sec2">
+        <svg
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          id="Coursera--Streamline-Simple-Icons"
+          height="24"
+          width="24"
+        >
+          <desc>Coursera Streamline Icon: https://streamlinehq.com</desc>
+          <title>Coursera</title>
+          <path
+            d="M11.374 23.977c-4.183 -0.21 -8.006 -2.626 -9.959 -6.347 -2.097 -3.858 -1.871 -8.864 0.732 -12.454C4.748 1.338 9.497 -0.698 14.281 0.23c4.583 0.857 8.351 4.494 9.358 8.911 1.122 4.344 -0.423 9.173 -3.925 12.04 -2.289 1.953 -5.295 2.956 -8.34 2.797zm7.705 -8.05a588.737 588.737 0 0 0 -3.171 -1.887c-0.903 1.483 -2.885 2.248 -4.57 1.665 -2.024 -0.639 -3.394 -2.987 -2.488 -5.134 0.801 -2.009 2.79 -2.707 4.357 -2.464a4.19 4.19 0 0 1 2.623 1.669c1.077 -0.631 2.128 -1.218 3.173 -1.855 -2.03 -3.118 -6.151 -4.294 -9.656 -2.754 -3.13 1.423 -4.89 4.68 -4.388 7.919 0.54 3.598 3.73 6.486 7.716 6.404a7.664 7.664 0 0 0 6.404 -3.563z"
+            fill="#000000"
+            stroke-width="1"
+          ></path>
+        </svg>
+        <p>FemCoders</p>
+      </section>
+      <section id="foot-sec3"></section>
+    </footer>
+  </body>
 </html>

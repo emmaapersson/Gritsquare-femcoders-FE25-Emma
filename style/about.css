@@ -1,133 +1,149 @@
-    html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
+.about-container {
   display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.about-box {
+  background-color: white;
+  border: 8px solid #fcab31;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
   flex-direction: column;
-  min-height: 100vh;
+  gap: 10px;
 }
 
-main {
-  flex: 1;
-
-}
-    .about-container {
-      display: flex;
-      justify-content: center;
-      padding: 40px 20px;
-    }
-
-    .about-box {
-      background-color:white;
-      border: 8px solid #fcab31;
-      border-radius: 20px;
-      max-width: 600px;
-      width: 100%;
-      padding: 30px;
-      box-sizing: border-box;
-      text-align: center;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .about-box h2.rubrik {
-      font-size: 60px;
-      color: #ff99c8;
-      margin-bottom: 20px;
-      margin-top: 0;
-    }
-
-    .under-text p {
-      line-height: 1.4;
-      font-size: 14px;
-    }
-
-    .about-text h2, 
-    .about-text p,
-    .about-text h3 {
-      margin: 0;
-    }
-
-    /* Footer */
-footer {
-    padding: 0.5rem;
-    background-color: var(--peach);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    flex-shrink: 0;
-    
+.about-box h2.rubrik {
+  font-size: 60px;
+  color: #ff99c8;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
-#foot-sec2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+.under-text p {
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.about-text h2,
+.about-text p,
+.about-text h3 {
+  margin: 0;
 }
 
 /* Vänster kolumn (rubrik + ruta) */
 .left-side {
-     margin-top: 10px;
-    max-width: 200px; 
-    text-align: left;
-    font-size: 14px;
-  
+  margin-top: 10px;
+  max-width: 200px;
+  text-align: left;
+  font-size: 14px;
 }
 
 .under-text {
-    margin-top: 10px;
-    max-width: 200px; 
-    text-align: left;
-    font-size: 14px;
-   
+  margin-top: 10px;
+  max-width: 200px;
+  text-align: left;
+  font-size: 14px;
 }
 .under-text p {
-    margin: 2px 0; 
-    line-height: 1.2; 
+  margin: 2px 0;
+  line-height: 1.2;
 }
 
 /* Rubriken */
 .rubrik {
-    margin-bottom: 10px; 
-    margin-right: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 
 .ruta {
-    background-color: white;                   
-    width: 200px;
-    min-height: 200px;
-    padding: 30px;
-    border: 5px solid orange;      
-    border-radius: 15px;
-    margin: 15px auto;              
-    text-align: center;
-    font-weight: bold;
-    margin-right: 30px;
-
+  background-color: white;
+  width: 200px;
+  min-height: 200px;
+  padding: 30px;
+  border: 5px solid orange;
+  border-radius: 15px;
+  margin: 15px auto;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 30px;
 }
 
 .about-container {
-    display: flex;           
-    align-items: flex-start; 
-    gap: 20px;              
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
-
 .about-text {
-    max-width: 600px;      
-    text-align: left;
-    margin-top: 80px;
-    line-height: 1.5;
+  max-width: 600px;
+  text-align: left;
+  margin-top: 80px;
+  line-height: 1.5;
 }
 
 body.dark {
-    color:white;
+  color: white;
 }
 body.dark .about-box {
-    color:white;
-    background-color: var(--darkPeach);
+  color: white;
+  background-color: var(--darkPeach);
 }
 
+/* ===========
+Tablet styling 
+=========== */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .about-box {
+    max-width: 500px;
+    padding: 40px;
+  }
+
+  .about-text {
+    max-width: 500px;
+    margin-top: 20px;
+  }
+}
+
+/* ============
+Desktop styling 
+============ */
+@media (min-width: 1024px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 60px 80px;
+  }
+
+  .about-box {
+    max-width: 600px;
+    padding: 50px;
+  }
+
+  .about-text {
+    max-width: 600px;
+    margin-top: 0;
+  }
+
+  .about-box h2.rubrik {
+    font-size: 80px;
+  }
+
+  .under-text {
+    max-width: 300px;
+    font-size: 16px;
+  }
+}

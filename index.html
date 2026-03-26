@@ -24,7 +24,7 @@
         <button
           class="dark-mode"
           aria-label="Button to toggle dark-mode"
-          id="darkBtn"
+          id="darkModeMobile"
         ></button>
 
         <a href="./contact.html">Contact</a>
@@ -49,6 +49,7 @@
         <button
           type="button"
           class="dark-mode"
+          id="darkBtn"
           aria-label="Button to toggle dark-mode"
         ></button>
         <button
@@ -89,11 +90,7 @@
           <p>Choose a post-it color:</p>
           <p></p>
           <div id="selectColor">
-            <div
-              id="color-1"
-              class="color-option selected"
-              data-color="#d6c5ef"
-            ></div>
+            <div id="color-1" class="color-option selected" data-color="#d6c5ef"></div>
             <div id="color-2" class="color-option" data-color="#edcbf6"></div>
             <div id="color-3" class="color-option" data-color="#f9d9ef"></div>
             <div id="color-4" class="color-option" data-color="#fa9ab2"></div>
@@ -125,9 +122,7 @@
           <input
             type="text"
             id="messageInput"
-            ,
             maxlength="200"
-            ,
             placeholder="Write something positive..."
             required
           />
@@ -266,7 +261,6 @@
       </section>
       <section id="foot-sec3"></section>
     </footer>
-    <script src="./modules/api.js" type="module"></script>
     <!-- Lägg till detta en gång i body -->
     <audio
       id="notifSound"

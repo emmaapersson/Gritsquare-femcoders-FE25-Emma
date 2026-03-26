@@ -1,36 +1,55 @@
-
 /* Har gjort contact enligt conva designen*/
 input {
-
-    border-radius:20px;
-    border : solid #fcab31 5px;
+  border-radius: 20px;
+  border: solid #fcab31 5px;
 }
 
 #lTb {
-    width: 250px;
-    height:150px;
-    font-family: sans-serif;
-    border: #fcab31 solid 5px;
-    border-radius: 10px;
+  width: 250px;
+  height: 150px;
+  font-family: sans-serif;
+  border: #fcab31 solid 5px;
+  border-radius: 10px;
 }
 
 #smTb {
-    width:100px;
-    height:30px;
+  width: 100px;
+  height: 30px;
 }
 
 #mTb {
-    height:20px;
+  height: 20px;
 }
 
-button {
-    background-color: hotpink;
-    font-family: chicle;
-    border: #fcab31 solid 5px;
-    border-radius: 5px;
-    margin: 10px;
-}
+/* =====================
+Tablet / Desktop styling 
+===================== */
+@media (min-width: 768px) {
+  input, #lTb, #smTb, #mTb {
+    width: auto;
+    max-width: 400px;
+  }
 
-body.dark p {
-    color:white;
+  #lTb {
+    width: 400px;
+    height: 200px;
+  }
+
+  #smTb {
+    width: 150px;
+    height: 40px;
+  }
+
+  #mTb {
+    height: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
