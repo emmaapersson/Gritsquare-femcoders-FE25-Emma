@@ -14,6 +14,7 @@
     <script src="./modules/cooldown.js" type="module"></script>
     <script src="./modules/translate.js" type="module"></script>
     <script src="./modules/textLimit.js" type="module"></script>
+    <script src="./modules/nickName.js" type="module"></script>
 
     <title>Good Vibes</title>
   </head>
@@ -84,13 +85,19 @@
       <button id="spawnBtn" class="spawn-btn">Spawn Bubbles</button>
 
       <div id="card" class="hidden">
-        <button id="readGuidelinesBtn" class="read-guidelines-btn">Guidelines</button>
+        <button id="readGuidelinesBtn" class="read-guidelines-btn">
+          Guidelines
+        </button>
         <h2>Put a smile on someone´s face!</h2>
         <div id="colors">
           <p>Choose a post-it color:</p>
           <p></p>
           <div id="selectColor">
-            <div id="color-1" class="color-option selected" data-color="#d6c5ef"></div>
+            <div
+              id="color-1"
+              class="color-option selected"
+              data-color="#d6c5ef"
+            ></div>
             <div id="color-2" class="color-option" data-color="#edcbf6"></div>
             <div id="color-3" class="color-option" data-color="#f9d9ef"></div>
             <div id="color-4" class="color-option" data-color="#fa9ab2"></div>
@@ -119,6 +126,12 @@
         <form id="msgForm">
           <p>Message:</p>
           <p id="counter">0/200</p>
+          <input
+            type="text"
+            id="nickName"
+            placeholder="Your name..."
+            maxlength="20"
+          />
           <input
             type="text"
             id="messageInput"
